@@ -1,0 +1,26 @@
+.custom-button {
+    background-color: white;
+    color: black;
+    width: 20%;
+    top: 0;
+    height: 60px;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #f3f4f6;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #ff4d4f !important;
+}
+
+.ant-tabs-tab:hover .ant-tabs-tab-btn {
+    color: #ff4d4f !important;
+}
+
+.ant-tabs-ink-bar {
+    background-color: #ff4d4f !important;
+}

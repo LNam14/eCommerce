@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('/fonts/Dancing_Script/static/DancingScript-Bold.ttf') format('truetype'),
+        url('/fonts/Dancing_Script/static/DancingScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MyFont', sans-serif;
+}
