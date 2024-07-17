@@ -1,8 +1,10 @@
 
 import Menu from "@/components/Menu/menu";
 import React from "react";
-import { Image, message, Tabs, TabsProps } from 'antd';
+import { Image, message, Tabs } from 'antd';
 import "./home.css"
+import items from "./components/tabs/tabsItem";
+
 const HomePage = () => {
     const messageTest = () => {
         message.success("Helo")
@@ -10,37 +12,11 @@ const HomePage = () => {
     const onChange = (key: string) => {
         console.log(key);
     };
-    const items: TabsProps['items'] = [
-        {
-            key: '1',
-            label: 'Khuyến mãi hot',
-            children: 'Content of Tab Pane 1',
-        },
-        {
-            key: '2',
-            label: 'Điện thoại bán chạy',
-            children: 'Content of Tab Pane 2',
-        },
-        {
-            key: '3',
-            label: 'Laptop nổi bật',
-            children: 'Content of Tab Pane 3',
-        },
-        {
-            key: '44',
-            label: 'Đồng hồ thông minh',
-            children: 'Content of Tab Pane 4',
-        },
-        {
-            key: '5',
-            label: 'Tai nghe',
-            children: 'Content of Tab Pane 5',
-        },
-    ];
+
     return (
         <div style={{ width: 1630, height: 2000, }}>
             <div style={{ display: "flex", justifyContent: "center", }}>
-                <div style={{ width: "60%", paddingTop: 10, height: 320, display: "flex", justifyContent: "space-between" }}>
+                <div style={{ width: "70%", paddingTop: 10, height: 320, display: "flex", justifyContent: "space-between" }}>
                     <div style={{ width: "20%" }}>
                         <Menu />
                     </div>
@@ -73,12 +49,12 @@ const HomePage = () => {
 
             </div>
             <div style={{ display: "flex", justifyContent: "center", marginTop: 10 }}>
-                <div style={{ width: "60%" }}>
+                <div style={{ width: "70%" }}>
                     <Image preview={false} style={{ borderRadius: 10 }} src="https://cdn2.cellphones.com.vn/insecure/rs:fill:1200:75/q:90/plain/https://dashboard.cellphones.com.vn/storage/b2s-update-19-06%20(1).gif" />
                 </div>
             </div>
             <div style={{ display: "flex", justifyContent: "center", marginTop: 10 }}>
-                <div style={{ width: "60%", display: "flex", justifyContent: "space-between" }}>
+                <div style={{ width: "70%", display: "flex", justifyContent: "space-between" }}>
                     <div style={{ backgroundColor: "white", width: "24%", borderRadius: 10, padding: 15, display: "flex", boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.1)', height: 160 }}>
                         <p style={{ fontSize: 16, fontWeight: "bold", color: "black", marginTop: 10, }}>MAC BOOK</p>
                         <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", }}>
@@ -116,7 +92,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div style={{ display: "flex", justifyContent: "center", marginTop: 10 }}>
-                <div style={{ width: "60%", display: "flex", justifyContent: "space-between" }}>
+                <div style={{ width: "70%", display: "flex", justifyContent: "space-between" }}>
                     <Tabs
                         tabBarGutter={94}
                         size="large"
@@ -131,11 +107,7 @@ const HomePage = () => {
                             color: "black"
                         }}
                         defaultActiveKey="1"
-                        items={items.map(item => ({
-                            key: item.key,
-                            label: item.label,
-                            children: item.children,
-                        }))}
+                        items={items}
                         onChange={onChange}
                     />
                 </div>

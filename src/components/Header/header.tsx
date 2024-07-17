@@ -42,7 +42,7 @@ const Header: React.FC = () => {
                 left: 0, right: 0, marginLeft: 'auto', marginRight: 'auto'
             }}
         >
-            <Layout style={{ width: 978, height: 75, backgroundColor: "white", marginLeft: 'auto', marginRight: 'auto' }}>
+            <Layout style={{ width: 1135, height: 75, backgroundColor: "white", marginLeft: 'auto', marginRight: 'auto' }}>
                 <Layout style={{ width: "100%", backgroundColor: "white", }}>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 75 }}>
                         <Image
